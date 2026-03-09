@@ -1,6 +1,71 @@
-package: Paquete que agrupa código; `package main` indica un programa ejecutable.
-import: Palabra clave para traer otros paquetes como `fmt`.
-func main: Función especial sin parámetros ni retorno que es el punto de entrada del programa.
-fmt.Println: Función del paquete `fmt` que imprime texto en consola seguido de un salto de línea.
-go run: Comando que compila y ejecuta un archivo .go directamente sin crear un binario permanente.
-go build: Comando que compila uno o varios archivos .go y genera un binario ejecutable (opcionalmente nombrado con -o).
+**package**: Paquete que agrupa código;
+             `package main` indica un programa ejecutable.
+
+**import**: Palabra clave para traer otros paquetes como `fmt`.
+
+**func main**: Función especial sin parámetros ni retorno
+               que es el punto de entrada del programa.
+
+**fmt.Println**: Función del paquete `fmt` que imprime texto
+                 en consola seguido de un salto de línea.
+
+**go run**: Comando que compila y ejecuta un archivo `.go`
+            directamente sin crear un binario permanente.
+
+**go build**: Comando que compila uno o varios archivos `.go`
+              y genera un binario ejecutable (opcionalmente nombrado con `-o`).
+
+**nota go run**: Para usar `go run` sobre un programa, el archivo debe pertenecer
+                 al paquete principal (`package main`) y debe existir siempre
+                 una función `main()`. Si no tiene `main()`, no forma parte
+                 del paquete ejecutable principal y no se puede ejecutar
+                 directamente con `go run`.
+
+**& (dirección de una variable)**: El operador `&` se usa para obtener la dirección
+                                   de memoria de una variable. Muchas funciones
+                                   (como `fmt.Scanln`) necesitan un puntero para
+                                   poder cambiar su valor.
+
+**tipos primitivos (visión general)**: Go tiene tipos básicos como `bool` (verdadero/falso),
+                                       números (`int`, `float64`, etc.), `string` (texto),
+                                       y algunos alias como `byte` y `rune`. Cada tipo tiene
+                                       un valor por defecto cuando se declara sin inicializar.
+
+**bool**: Tipo lógico; sólo puede ser `true` o `false`.
+
+**int**: Entero con signo “normal” (tamaño según la arquitectura).
+
+**int8 / int16 / int32 / int64**: Enteros con signo de tamaño fijo
+                                  (por ejemplo, `int8` va de -128 a 127).
+
+**uint**: Entero sin signo “normal” (sólo 0 y positivos).
+
+**uint8 / uint16 / uint32 / uint64**: Enteros sin signo de tamaño fijo.
+
+**byte**: Alias de `uint8`, se usa para representar bytes o datos binarios.
+
+**rune**: Alias de `int32`, representa un carácter Unicode.
+
+**float32**: Número con decimales de precisión simple.
+
+**float64**: Número con decimales de doble precisión
+             (el más usado para decimales).
+
+**complex64 / complex128**: Números complejos (parte real e imaginaria).
+
+**string**: Cadena de texto inmutable (se escribe entre comillas dobles).
+
+**declaración vs asignación**: Declarar una variable es crearla
+                               (por ejemplo, `var x int`);
+                               asignar es darle un valor
+                               (por ejemplo, `x = 10`).
+
+**var**: Palabra clave para declarar variables, opcionalmente con valor inicial
+         (ejemplo: `var x int` o `var x int = 10`).
+
+**inferencia de tipo**: Si usas `var x = 10`, el compilador deduce el tipo de `x`
+                        según el valor (en este caso, `int`).
+
+**:= (short declaration)**: Sintaxis corta que declara y asigna una variable
+                            a la vez dentro de funciones, dejando que Go infiera
+                            el tipo (ejemplo: `x := 10`).
