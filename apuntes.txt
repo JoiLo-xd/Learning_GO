@@ -1,0 +1,6 @@
+package: Paquete que agrupa código; `package main` indica un programa ejecutable.
+import: Palabra clave para traer otros paquetes como `fmt`.
+func main: Función especial sin parámetros ni retorno que es el punto de entrada del programa.
+fmt.Println: Función del paquete `fmt` que imprime texto en consola seguido de un salto de línea.
+go run: Comando que compila y ejecuta un archivo .go directamente sin crear un binario permanente.
+go build: Comando que compila uno o varios archivos .go y genera un binario ejecutable (opcionalmente nombrado con -o).

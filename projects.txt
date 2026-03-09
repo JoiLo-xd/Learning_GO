@@ -1,0 +1,18 @@
+[0] Fase 1 – Fundamentos
+[0] Hello + saludo personalizado (leer nombre por consola y saludar)
+[0] Conversor de temperatura (Celsius ↔ Fahrenheit)
+[0] Conversor de distancia (Km ↔ Millas)
+[0] Par o impar (indicar si un número es par o impar)
+[0] Tabla de multiplicar (imprimir la tabla de un número con for)
+
+[0] Fase 2 – Colecciones y structs
+[0] Gestor de tareas en memoria (CLI) – añadir, listar, marcar como completada (slices)
+[0] Agenda de contactos (CLI) – añadir, listar y buscar usando map
+
+[0] Fase 3 – Paquetes, errores y tests
+[0] Refactor de calculadora o gestor de tareas – mover lógica a paquetes y manejar errores con (T, error)
+[0] Librería de utilidades – 3–5 funciones con sus tests en archivos _test.go
+
+[0] Fase 4 – Concurrencia y servicios web
+[0] API REST sencilla de tareas o notas – CRUD en memoria con net/http y JSON
+[0] Worker concurrente simple – varios workers en goroutines procesando trabajos desde un channel
