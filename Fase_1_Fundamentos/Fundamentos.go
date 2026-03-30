@@ -75,4 +75,73 @@ func main() {
 	var numero7 float64 = float64(numero6)
 	fmt.Println("Numero7:", numero7)
 
+	//Constantes
+	//Las constantes son variables que no pueden cambiar su valor una vez asignado.
+	//Para declarar una constante, se usa la palabra clave const.
+	//Por ejemplo:
+	const pi = 3.14
+	fmt.Println("Pi:", pi)
+	//Si intentamos cambiar el valor de una constante, el compilador nos devolvera un error.
+	//Asi que por logica son igual a Java.
+
+	// Las constantes enumeradas son constantes que se definen como un conjunto de valores.
+	//Por ejemplo:
+	const (
+		Domingo = iota
+		Lunes
+		Martes
+		Miercoles
+		Jueves
+		Viernes
+		Sabado
+	)
+	//iota es un contador que se incrementa automaticamente cada vez que se define una constante.
+	//iota es util para definir un conjunto de constantes que se incrementan automaticamente.
+	//El ejemplo de antes seria equivalente a:
+	//const Lunes int = 1
+	//const Martes int = 2
+	//const Miercoles int = 3
+	//const Jueves int = 4
+	//const Viernes int = 5
+	//const Sabado int = 6
+
+	//Operadores
+
+	//Cambian datos de variables o constantes.
+	//Operadores aritmeticos son iguales a Java.
+	// * -> Multiplicacion
+	// / -> Division
+	// % -> Modulo
+	// + -> Suma
+	// - -> Resta
+	// ++ -> Incremento
+	// -- -> Decremento
+
+	//Los operadores logicos tambien son iguales a Java.
+	// && -> AND
+	// || -> OR
+	// ! -> NOT
+	// == -> Igualdad
+	// != -> Desigualdad
+	// > -> Mayor que
+	// < -> Menor que
+	// >= -> Mayor o igual que
+	// <= -> Menor o igual que
+
+	//Esto es igual a java asi que no hace explicar 
+
+	// Los if / else / else if son iguales a Java.
+	var condicion bool = true
+	condicion = false
+	if condicion {
+		//codigo
+	} else if condicion {
+		//codigo
+	} else {
+		//codigo
+	}
+
+
+
+
 }

@@ -16,3 +16,6 @@
 [0] Fase 4 – Concurrencia y servicios web
 [0] API REST sencilla de tareas o notas – CRUD en memoria con net/http y JSON
 [0] Worker concurrente simple – varios workers en goroutines procesando trabajos desde un channel
+
+[0] PROYECTO REAL DE BACKEND EN GOLANG:
+    Gestor de Torneos. Conectado a un frontend en Flutter 

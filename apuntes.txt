@@ -69,3 +69,11 @@
 **:= (short declaration)**: Sintaxis corta que declara y asigna una variable
                             a la vez dentro de funciones, dejando que Go infiera
                             el tipo (ejemplo: `x := 10`).
+
+**const**: Palabra clave para definir constantes, valores que no cambian en tiempo
+           de ejecución (ejemplo: `const PI = 3.14`).
+
+**iota**: Contador automático que se usa dentro de un bloque `const (...)`.
+          Empieza en 0 en la primera línea del bloque y aumenta en 1 en cada
+          línea siguiente, útil para crear enumeraciones sin escribir los
+          números a mano.
